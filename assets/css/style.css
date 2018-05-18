@@ -109,15 +109,15 @@ nav a{
 }
 
 #here {
-	text-decoration: none;
-	color:red;
+	text-decoration:none;
+    color: #4aaaa5;
+    font-style: italic;
+
 }
 #here:hover{
-	Font-size:28px;
-	font-weight:500;
-	background:#4aaaa5;
-	padding:20px,0,0,30px;
-	color:#ffffff;
+	Font-size:24px;
+    font-weight:300;
+    text-decoration-line: underline;
 }
 /*footer*/
 
