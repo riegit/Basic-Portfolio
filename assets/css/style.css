@@ -43,8 +43,7 @@ h3 {
 #header{
     background: #fff;
     margin: 0 0 30px;
-     /* elements with z-index:(positive value) appear on the top of the vertical stacking order.*/
-    z-index: 1;
+
     color: #fff;
     overflow: auto;
     border-bottom: 2px solid #ccc;
