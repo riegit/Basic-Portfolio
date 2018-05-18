@@ -3,21 +3,22 @@
 }
 
 body{
-    background: url(../images/concrete-texture.png);
+    background: url(../images/concrete-texture.png); /* apply background color using an image file*/
     font-size: 18px;
     line-height: 34px;
     font-family: Arial,'Helvetica Neue' Helvetica, sans-serif;
     color: #777;
 
 }
-
+/* Apply the same width to the header, the contents area and the footer*/
 .container{
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
+  
 }
 
-h1,h3,p {
+h1{
     margin-bottom: 20px;
 }
 
@@ -38,12 +39,15 @@ h3 {
     font-size: 22px;
 
 }
+
+
 /*header*/
 
 #header{
     background: #fff;
-    margin: 0 0 30px;
-
+    margin-bottom:30px;
+     /* elements with z-index:(positive value) appear on the top of the vertical stacking order.Header comes on top of the portfolio images*/
+    z-index: 1;
     color: #fff;
     overflow: auto;
     border-bottom: 2px solid #ccc;
@@ -87,25 +91,34 @@ nav a{
     padding-top: 130px;
  }
 
-.main-section {
+.main-contents{
     background: #ffffff;
     padding: 30px;
-    margin: 0 0 40px 0;
+    margin-bottom:40px;
     width: 100%;
     float: left;
     border: 1px solid#dddddd;
 }
 
 .image {
-    width: 200px;
+    width: 230px;
     height: auto;   
     float: left;
     margin-right: 25px;
     margin-top: 10px;
 }
 
-
-
+#here {
+	text-decoration: none;
+	color:red;
+}
+#here:hover{
+	Font-size:28px;
+	font-weight:500;
+	background:#4aaaa5;
+	padding:20px,0,0,30px;
+	color:#ffffff;
+}
 /*footer*/
 
 footer{
@@ -120,24 +133,24 @@ footer{
 }
 
 /*portfolio*/
-.work {
-    width: 274px;
+.photo {
+    width: 280px;
     overflow: auto;
     position: relative;
     float: left;
     margin: 20px 0 25px;
 }
 
-.work:nth-child(even) {
+.photo:nth-child(even) {
     margin-right: 40px;
 }
 
-.work img{
+.photo img{
     width: 100%;
     border: 0 none; 
 }
 
-.work h3 {
+.photo h3 {
     border-bottom: 0;
     background: #4aaaa5;
     color: #fff;
@@ -187,5 +200,12 @@ input[type=submit]{
     color: #fff;
     font-size: 18px;
     padding: 5px 20px;
+    cursor: pointer;
 }
+input[type=submit]:active{
+    font-weight: 700;
+    background: #666666;
+    padding: 10px 40px;
+    font-size: 28px;
 
+}
